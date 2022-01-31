@@ -1,0 +1,13 @@
+Inherite Template Features
+1.Template Inheritance
+base.html
+{% block baseblock %}
+{% endblock %}
+Index.html
+<!Doctype html>
+{% extends ‘AppName/base.html’ %}
+<body>
+{% block baseblock %}
+Write new code
+{% endblock %}
+</body>
